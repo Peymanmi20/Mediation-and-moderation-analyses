@@ -34,42 +34,28 @@ does not allow a causal interpretation.
 
 ## 2. Regression
 
-A Pearson correlation was conducted to examine the association between
-generalized executive functioning (`brief_GEC_T`) and positive affect
-(`panas_pos`).
-
-The analysis indicated a negative association between the variables,
-with Pearson's r = -0.49.
-
-This suggests that higher generalized executive functioning scores
-were associated with lower levels of positive affect in the present
-sample.
-
-The magnitude of the association can be interpreted as moderate.
+With respect to(`regression.pdf`), a multiple linear regression predicting perceived stress (PSS) from executive function (BRIEF GEC T), negative affect, positive affect, age, and sex yielded a large and significant model, F(5, 391) = 161.6, p < .001, R² = .674 (adjusted R² = .670).
+Significant predictors: Higher negative affect was the strongest unique predictor (β = .48, p < .001), followed by greater executive dysfunction (β = .26, p < .001) and lower positive affect (β = –.25, p < .001). Age contributed a small negative effect (β = –.07, p = .017).
+Non-significant predictor: Sex did not uniquely predict PSS (β = –.04, p = .196).
+Collinearity was negligible (all VIFs < 1.8). In sum, affective variables and executive dysfunction together explained approximately two-thirds of the variance in perceived stress, with negative affect showing the largest independent contribution.
 
 ### Interpretation
 
-This finding indicates a meaningful inverse association between the
-two variables. However, the observed correlation should not be
-interpreted as evidence that generalized executive functioning causes
-changes in positive affect.
+This finding indicates a meaningful prediction of perceived stress 
+from NA, PA, and GEC which explained 0.64 of shared variance. 
 
 ---
 
-## 3. Statistical Considerations
+## 3. Mediation analysis
 
-The sample consisted of 397 participants.
+According to the file (`parameter_med.xlsx`), a saturated mediation model tested whether negative affect (PANAS-N) mediated the association between executive dysfunction (BRIEF GEC T) and perceived stress (PSS), controlling for age and sex.
+The total effect of executive dysfunction on perceived stress was significant (B = 0.49, SE = 0.03, p < .001). The indirect effect through negative affect was significant (B = 0.22, SE = 0.02, 95% CI [0.18, 0.27], p < .001): higher executive dysfunction predicted greater negative affect (path a: B = 0.35, SE = 0.03, p < .001), which in turn predicted higher perceived stress (path b: B = 0.64, SE = 0.05, p < .001). The direct effect remained significant (path c′: B = 0.27, SE = 0.03, p < .001), indicating partial mediation.
+Among covariates, age negatively predicted perceived stress (B = –0.07, p = .002), whereas sex significantly predicted negative affect (B = –1.50, p = .014) but not perceived stress (p = .069).
 
-Although several variables showed statistically significant
-departures from normality according to the Shapiro-Wilk test,
-inspection of the distributions and scatterplots suggested that the
-relationships were approximately linear.
+---
+## 3. Moderation analysis
+According to the file (`parameter_moder.xlsx`), a moderated analysis tested whether positive affect conditioned the indirect effect of executive dysfunction (BRIEF GEC T) on perceived stress via negative affect. In the conditional model, negative affect remained the strongest predictor of perceived stress (B = 0.57, SE = 0.05, p < .001), followed by positive affect (B = –0.28, SE = 0.04, p < .001) and executive dysfunction (B = 0.20, SE = 0.03, p < .001). The interaction term was marginally significant (B = –0.008, SE = 0.004, p = .073), suggesting positive affect may weakly buffer the mediated pathway, though it fell just short of conventional significance. Age showed a small negative effect (B = –0.06, p = .008), whereas sex was not significant (B = –0.85, p = .121).
 
-Pearson correlations were therefore used as the primary correlation
-analysis.
-
-Spearman correlations may additionally be examined as a sensitivity
-analysis.
 
 ---
 

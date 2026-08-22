@@ -9,22 +9,19 @@ The interpretation is based on the statistical results reported in
 the corresponding output files.
 
 ---
+## 1. Normality testing
+Normality results in the file (`normality_testing.xlsx`) showed that Shapiro-Wilk test of all variables
+are significant (p < 0.001), but their skewness and kurtosis all are below 1. In addition, Mardia's test indicated
+significance for skewness (p < 0.001), but not for kurtosis(p > 0.05). Taken together, I decided to compute both Spearman and Pearson in correlation analysis to empirically verify the appropriateness of parametric methods. Also, in mediation analysis, estimator left as ML (Maximum Likelihood), with 5000 bootstraps followed by percentile method. 
 
-## 1. Generalized Executive Functioning and Negative Affect
+---
 
-A Pearson correlation was conducted to examine the association between
-generalized executive functioning (`brief_GEC_T`) and negative affect
-(`panas_neg`).
+## 2. Correlation results
 
-The analysis indicated a positive association between the two variables,
-with Pearson's r = .55.
-
-This suggests that higher scores on generalized executive functioning
-were associated with higher levels of negative affect in the present
-sample.
-
-The magnitude of the correlation can be interpreted as a moderate
-association.
+AHigher executive dysfunction was moderately-to-strongly associated with greater negative affect (r = .57, p < .001) and perceived stress (r = .65, p < .001), and with lower positive affect (r = –.49, p < .001). Negative and positive affect were moderately inversely related (r = –.40, p < .001). Perceived stress showed a strong positive correlation with negative affect (r = .73, p < .001) and a moderate negative correlation with positive affect (r = –.58, p < .001). Sex correlated weakly but significantly with negative affect (r = –.11, p = .026), perceived stress (r = –.12, p = .014), and—by Spearman only—positive affect (ρ = .11, p = .037).
+Non-significant correlations:
+No significant associations emerged for age with any psychological variable (all ps > .09), nor for sex/age with executive dysfunction (all ps > .19). Age and sex were also unrelated (p = .468).
+In summary, executive dysfunction, negative affect, and perceived stress form a tightly linked cluster, whereas age showed no meaningful associations with any variable.
 
 ### Interpretation
 
@@ -35,7 +32,7 @@ does not allow a causal interpretation.
 
 ---
 
-## 2. Generalized Executive Functioning and Positive Affect
+## 2. Regression
 
 A Pearson correlation was conducted to examine the association between
 generalized executive functioning (`brief_GEC_T`) and positive affect

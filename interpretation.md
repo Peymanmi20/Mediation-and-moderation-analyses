@@ -3,10 +3,10 @@
 ## Overview
 
 This document provides the interpretation of the statistical findings
-obtained from the analyses conducted in IBM SPSS Statistics.
+obtained from the analyses conducted in IBM SPSS Statistics, JASP and RStudio.
 
 The interpretation is based on the statistical results reported in
-the corresponding SPSS output files.
+the corresponding output files.
 
 ---
 
